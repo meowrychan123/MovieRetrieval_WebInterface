@@ -1,0 +1,10 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Movie Retrieval System</h1>
+<form action="{% url 'results' %}" method="get">
+    <input type="text" name="query" placeholder="Enter your query">
+    <button type="submit">Search</button>
+</form>
+{% endblock %}

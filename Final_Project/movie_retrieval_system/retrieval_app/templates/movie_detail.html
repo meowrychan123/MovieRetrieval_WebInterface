@@ -1,0 +1,10 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 style="text-align: center;">{{ movie.title }}</h1>
+<p style="text-align: center;"><strong>IMDb Rating:</strong> {{ movie.rating }}</p>
+<p><strong>Summary:</strong></p>
+<p>{{ movie.summary }}</p> <!-- Updated to reflect the summary key -->
+<a href="{% url 'index' %}">Back to Search</a>
+{% endblock %}
